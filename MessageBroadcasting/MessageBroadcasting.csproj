@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RootNamespace>com.adastrafork.tools.messagebroadcasting</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>1.0.0</Version>
+        <Authors>Pablo César Pérez González (adastra)</Authors>
+        <Description>Library which enables assemblies to be declared as message senders, message receivers, or both, allowing the creation of a network of message passing assemblies.</Description>
+        <Copyright></Copyright>
+        <PackageTags>Library Broadcast Messaging Tool</PackageTags>
+        <PackageId>com.adastrafork.MessageBroadcasting</PackageId>
+        <Company>Adastra/fork</Company>
+        <PackageLicenseUrl>https://creativecommons.org/licenses/by-sa/4.0/</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/pcesarperez/MessageBroadcasting</RepositoryUrl>
+        <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+        <RepositoryType>GitHub</RepositoryType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <OutputPath>bin\Debug\</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <OutputPath>bin\Release\</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NLog" Version="4.5.9" />
+    </ItemGroup>
+</Project>

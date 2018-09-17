@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>com.adastrafork.tools.messagebroadcasting.tests</RootNamespace>
+    <Authors>Pablo César Pérez González (adastra)</Authors>
+    <Company>Adastra/fork</Company>
+    <Product>MessageBroadcasting</Product>
+    <Description>Unit tests for the MessageBroadcasting library.</Description>
+    <PackageLicenseUrl>https://creativecommons.org/licenses/by-sa/4.0/</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/pcesarperez/MessageBroadcasting</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>Library Broadcast Messaging Tool "Unit testing"</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="NUnit" Version="3.10.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MessageBroadcasting\MessageBroadcasting.csproj" />
+  </ItemGroup>
+
+</Project>
